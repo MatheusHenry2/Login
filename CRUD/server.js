@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.post('/cadastrar', (req, res) => {
     usuariosEmail.push(req.body.usuario)
-    usuariosSenha.push(req.body.senha)
+    usuariosSenha.push(req.body.senha)  
     res.sendFile(__dirname + "/views/index.html")
 })
 
